@@ -1,0 +1,629 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+}
+
+header,
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* ----------------Header Part Style----------- */
+/* header content */
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #161616;
+  border-radius: 30px;
+  padding: 5%;
+  /* max-height: 645px; */
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+header h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80px;
+  /* color: #ffffff; */
+  margin-top: 5%;
+
+  /* text effect */
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+    1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+    1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+    1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+header p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #f5f5f5;
+  margin: 16px 0px 16px 0px;
+}
+
+header button {
+  width: 187px;
+  height: 56px;
+  background: #dd0000;
+  border-radius: 5px;
+  color: #f5f5f5;
+  border: none;
+  margin-top: 16px;
+  font-size: 20px;
+}
+/* transition effect */
+header button:hover {
+  background-color: #6e0606;
+  transition: all 3s;
+}
+header .arrow-btn {
+  margin-left: 7%;
+  line-height: normal;
+  width: 7px;
+  height: 14px;
+  border-radius: 1.5px solid #ffffff;
+}
+
+.header__img img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  margin-left: 10%;
+  margin-bottom: -12.5%;
+}
+
+/* animation effect */
+header button {
+  animation: text 4s;
+}
+header p {
+  animation: text 4s;
+}
+header h1 {
+  font-size: 70px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: text 4s;
+}
+@keyframes text {
+  0% {
+    margin-left: -30%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+/* animation effect */
+.header__img {
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0% {
+    background-color: rgb(190, 47, 47);
+    border-radius: 50%;
+  }
+  25% {
+    background-color: yellow;
+    border-radius: 50%;
+  }
+  50% {
+    background-color: blue;
+    border-radius: 50%;
+  }
+  100% {
+    background-color: black;
+    border-radius: 50%;
+  }
+}
+
+/* ---------------Main Part Style---------------- */
+button {
+  cursor: pointer;
+}
+.main__content--area {
+  width: 100%;
+  position: relative;
+}
+.main__content--area {
+  position: relative;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+/* main content */
+.main__content {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 5%;
+  /* height: auto; */
+}
+.main__content--container {
+  background-color: #161616;
+  border-radius: 10px;
+  padding: 5%;
+  margin: 0 auto;
+}
+.upcoming__match--btn {
+  margin-top: 27%;
+}
+.main__content--container button {
+  width: 180px;
+  height: 50px;
+  background-color: #ffffff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 30px;
+  color: #161616;
+  border: none;
+  border-radius: 5px;
+}
+main .upcoming__match--btn button {
+  background-color: #dd0000;
+  color: #ffffff;
+}
+/* blog information */
+main .blogs__news {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 0.5rem;
+}
+.card {
+  height: 300px;
+}
+.card .verses {
+  display: grid;
+  grid-template-columns: 40% 10% 40%;
+  gap: 0.5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.card .verses .vs {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 10%;
+}
+.card .verses img {
+  width: 100px;
+  height: 100px;
+}
+.blogs__news button {
+  width: 100px;
+  height: 32px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #161616;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 5%;
+  border-radius: 5px;
+}
+.card h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #161616;
+  margin-bottom: 10px;
+}
+.card__icons {
+  display: flex;
+  color: rgba(22, 22, 22, 0.7);
+}
+.card__icons .chat__icon {
+  margin-left: 15%;
+}
+
+/* view all btn */
+.view__all--btn--container {
+  display: none;
+  height: 200px;
+  position: relative;
+}
+.view__all--btn {
+  padding: 12px 29px;
+  width: 131px;
+  height: 47px;
+  background: #dd0000;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  /* font */
+  font-family: "HelveticaNeue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+
+  /* center */
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* ------------------Footer Part Style-------------- */
+footer {
+  width: 100%;
+  /* height: 345px; */
+  background: #161616;
+  position: relative;
+}
+footer .goal {
+  margin-top: 100px;
+  margin-bottom: 1rem;
+}
+footer h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  /* identical to box height */
+  text-align: center;
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style-type: none;
+}
+footer .others__info ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+footer .others__info ul li {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  font-feature-settings: "liga" off;
+  color: #b9b9b9;
+}
+
+footer .social__icons ul {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin-top: 2rem;
+}
+footer .social__icons i {
+  font-size: 30px;
+  color: blue;
+}
+
+/* -------------------------------------Responsiveness--------------------------------- */
+/* 1.x-small :: Dimensions <576px ---*/
+@media (max-width: 425px) {
+  /* -----------Header Part------- */
+  header {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5%;
+    height: auto;
+  }
+  header h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px !important;
+    line-height: 33px;
+    text-align: center;
+  }
+  header p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #f5f5f5;
+    /* or 171% */
+
+    text-align: center;
+  }
+  header button {
+    width: 141px;
+    height: 30px;
+    margin-top: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+  .header__img img {
+    position: relative;
+    width: 213px;
+    height: 150px;
+    left: 45%;
+    margin-bottom: -6.5%;
+    transform: translateX(-50%);
+  }
+  /* --------Main Part------- */
+  .main__content--container {
+    display: grid !important;
+    grid-template-rows: repeat(3, 1fr) !important;
+    grid-row-gap: 5%;
+    /* height: auto; */
+    margin-top: 10% !important;
+  }
+  .main__content--area {
+    grid-template-columns: 100%;
+  }
+  .main__content--container {
+    background-color: #ffffff;
+  }
+  .main__content--container button {
+    border: 1px solid rgba(69, 66, 66, 0.295);
+  }
+  .upcoming__match--btn {
+    margin-top: 1%;
+  }
+
+  main .blogs__news {
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-row-gap: 0.5rem;
+  }
+
+  /* -----Footer Part----- */
+  footer h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    /* identical to box height */
+    text-align: center;
+  }
+  footer .others__info ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+@media (max-width: 575.98px) {
+  /* -----------Header Part------- */
+  header {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5%;
+    height: auto;
+  }
+  header h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+  }
+  header p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    /* or 171% */
+
+    text-align: center;
+  }
+  header button {
+    width: 141px;
+    height: 30px;
+    margin-top: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+  .header__img img {
+    position: relative;
+    width: 213px;
+    height: 150px;
+    left: 45%;
+    margin-bottom: -6.5%;
+    transform: translateX(-50%);
+  }
+  /* --------Main Part------- */
+  .main__content--area {
+    grid-template-columns: 100% !important;
+  }
+  .main__content--container {
+    background-color: #ffffff;
+  }
+  .main__content--container button {
+    border: 1px solid rgba(69, 66, 66, 0.295);
+  }
+  .upcoming__match--btn {
+    margin-top: 1%;
+  }
+
+  main .blogs__news {
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-row-gap: 0.5rem;
+    margin-top: -170%!important;
+  }
+  .view__all--btn--container {
+    display: none !important;
+  }
+
+  /* -----Footer Part----- */
+  footer h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    /* identical to box height */
+    text-align: center;
+  }
+  footer .others__info ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+/* // Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+  /* -----------Header Part------- */
+  header {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5%;
+    height: auto;
+  }
+  header h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+  }
+  header p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    /* or 171% */
+
+    text-align: center;
+  }
+  header button {
+    width: 141px;
+    height: 30px;
+    margin-top: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+  .header__img img {
+    position: relative;
+    width: 213px;
+    height: 150px;
+    left: 45%;
+    margin-bottom: -6.5%;
+    transform: translateX(-50%);
+  }
+  /* --------Main Part------- */
+  
+  .main__content--area {
+    grid-template-columns: 100%;
+  }
+  .main__content--container {
+    background-color: #ffffff;
+  }
+  .main__content--container button {
+    border: 1px solid rgba(69, 66, 66, 0.295);
+  }
+  .upcoming__match--btn {
+    margin-top: 1%;
+  }
+
+  main .blogs__news {
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-row-gap: 0.5rem;
+    /* margin-top: -115%; */
+  }
+  .view__all--btn--container {
+    display: none !important;
+  }
+
+  /* -----Footer Part----- */
+  footer h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    /* identical to box height */
+    text-align: center;
+  }
+  footer .others__info ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  /* ------header part------ */
+  header h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  header p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  header button {
+    width: 161px;
+    height: 48px;
+  }
+  /* ------main part------ */
+  .main__content {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+  }
+  .main__content--area {
+    grid-template-columns: 100%;
+  }
+  .main__content--container {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+  }
+  .main__content--container button {
+    border: 1px solid rgba(69, 66, 66, 0.295);
+  }
+  .upcoming__match--btn {
+    margin-top: 1%;
+  }
+  main .blogs__news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-top: -35%;
+  }
+  main .blogs__news .last-child {
+    display: none;
+  }
+  .view__all--btn--container {
+    display: block;
+  }
+}
